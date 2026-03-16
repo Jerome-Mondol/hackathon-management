@@ -1,4 +1,4 @@
-import { Space_Grotesk, Bebas_Neue, Oswald, JetBrains_Mono, Inter } from "next/font/google";
+import { Space_Grotesk, Bebas_Neue, Oswald, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -22,9 +22,10 @@ const oswald = Oswald({
   variable: "--font-oswald",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  variable: "--font-mono",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-ibm-plex-mono",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -37,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         ${spaceGrotesk.variable} 
         ${bebasNeue.variable} 
         ${oswald.variable} 
-        ${jetbrainsMono.variable} 
+        ${ibmPlexMono.variable}
         antialiased
       `}>
         {children}
