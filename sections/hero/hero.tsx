@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 const Hero = () => {
   return (
-        <section className="w-full pt-24 pb-16 sm:pb-20 md:pt-28 lg:min-h-[100svh] lg:pt-36 lg:pb-24">
+        <section className="w-full h-auto pt-24 md:pt-28  lg:pt-36">
             <div className="mx-auto flex w-full flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-12">
                 <div className="flex w-full flex-col items-start justify-center gap-6 lg:w-1/2">
                     <h1 className="font-bebas text-5xl leading-[0.95] tracking-tight sm:text-7xl md:text-8xl xl:text-9xl">

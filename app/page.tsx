@@ -1,5 +1,6 @@
 import Hero from "@/sections/hero/hero"
 import StatsStrip from "@/sections/stats/StatsStrip"
+import CapabilitiesSection from "../sections/capabilities/CapabilitiesSection"
 
 const statsItems = [
   { value: "500+", label: "HACKATHONS" },
@@ -10,9 +11,10 @@ const statsItems = [
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-background" >
+    <div className="min-h-screen bg-background">
       <Hero />
-      <StatsStrip items={statsItems} className="mt-8 sm:mt-10 lg:mt-12" />
+      <StatsStrip items={statsItems}  />
+      <CapabilitiesSection />
     </div>
   )
 }
