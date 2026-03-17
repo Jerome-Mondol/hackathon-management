@@ -1,6 +1,7 @@
 import { Space_Grotesk, Bebas_Neue, Oswald, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/shared/navbar/Navbar";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -40,10 +41,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         ${oswald.variable} 
         ${jetbrainsMono.variable}
         antialiased
-        max-w-[90vw]
+        max-w-[80vw]
         mx-auto
         bg-background
       `}>
+        <Navbar />
         {children}
       </body>
     </html>

@@ -1,12 +1,9 @@
-import Navbar from "@/components/shared/navbar/Navbar"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import Hero from "@/sections/hero/hero"
 
 const Home = () => {
   return (
-    <div>
-      {/* <Button variant="default" size="sm">GET STARTED<ArrowRight /></Button> */}
-      <Navbar />
+    <div className="min-h-screen bg-background" >
+      <Hero />
     </div>
   )
 }
