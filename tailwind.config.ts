@@ -4,7 +4,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        ibm: ["var(--font-ibm-plex-mono)", "monospace"],
+        sans: ["var(--font-sans)", "sans-serif"],
+        jetbrains: ["var(--font-jetbrains-mono)", "monospace"],
+        bebas: ["var(--font-bebas)", "sans-serif"],
+        oswald: ["var(--font-oswald)", "sans-serif"],
+        display: ["var(--font-display)", "sans-serif"],
       },
     },
   },

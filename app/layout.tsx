@@ -1,6 +1,7 @@
-import { Space_Grotesk, Bebas_Neue, Oswald, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Space_Grotesk, Bebas_Neue, Oswald, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/shared/navbar/Navbar";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -22,10 +23,10 @@ const oswald = Oswald({
   variable: "--font-oswald",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-ibm-plex-mono",
+  variable: "--font-jetbrains-mono",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -38,9 +39,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         ${spaceGrotesk.variable} 
         ${bebasNeue.variable} 
         ${oswald.variable} 
-        ${ibmPlexMono.variable}
+        ${jetbrainsMono.variable}
         antialiased
+        max-w-[80vw]
+        mx-auto
+        bg-background
       `}>
+        <Navbar />
         {children}
       </body>
     </html>
