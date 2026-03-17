@@ -1,11 +1,12 @@
+import Navbar from "@/components/shared/navbar/Navbar"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 const Home = () => {
   return (
     <div>
-      <Button variant="secondary" size="lg">// GET STARTED - LG <ArrowRight /></Button>
-      <Button variant="default" size="sm">// GET STARTED - SM<ArrowRight /></Button>
+      {/* <Button variant="default" size="sm">GET STARTED<ArrowRight /></Button> */}
+      <Navbar />
     </div>
   )
 }
