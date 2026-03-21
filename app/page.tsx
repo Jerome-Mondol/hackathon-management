@@ -1,20 +1,16 @@
-import Hero from "@/sections/hero/hero"
+import Hero from "@/sections/hero/Hero"
 import StatsStrip from "@/sections/stats/StatsStrip"
 import CapabilitiesSection from "../sections/capabilities/CapabilitiesSection"
-
-const statsItems = [
-  { value: "500+", label: "HACKATHONS" },
-  { value: "20K+", label: "DEVELOPERS" },
-  { value: "15K+", label: "PROJECTS" },
-  { value: "$2M+", label: "PRIZE POOL" },
-]
+import WorkflowSection from "../sections/workflow/WorkflowSection"
+import { homeStats } from "../sections/stats/stats.data"
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
-      <StatsStrip items={statsItems}  />
+      <StatsStrip items={homeStats}  />
       <CapabilitiesSection />
+      <WorkflowSection />
     </div>
   )
 }
