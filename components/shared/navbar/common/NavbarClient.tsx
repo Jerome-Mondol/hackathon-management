@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import DesktopNav from "@/components/shared/navbar/common/DesktopNav";
 import MobileNav from "@/components/shared/navbar/common/MobileNav";
@@ -48,10 +48,15 @@ const NavbarClient = ({ navItems }: NavbarClientProps) => {
             setActiveDropdown={setActiveDropdown}
           />
 
-          <div className="hidden items-center space-x-4 lg:flex">
+          <div className="hidden items-center space-x-3 lg:flex">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button href="/services" variant="default" size="sm">
-                GET STARTED <ArrowRight className="h-4 w-4" />
+              <Button href="/login" variant="outline" size="sm">
+                LOGIN
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button href="/signup" variant="default" size="sm">
+                SIGN UP
               </Button>
             </motion.div>
           </div>
