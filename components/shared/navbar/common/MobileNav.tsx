@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NavItem } from "@/components/shared/navbar/common/types";
 
@@ -43,13 +42,22 @@ const MobileNav = ({ navItems, isMobileMenuOpen, setIsMobileMenuOpen }: MobileNa
             ))}
             <div className="space-y-2 px-4 py-2">
               <Button
-                href="/services"
+                href="/login"
+                variant="outline"
+                size="sm"
+                className="w-full"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                LOGIN
+              </Button>
+              <Button
+                href="/signup"
                 variant="default"
                 size="sm"
                 className="w-full"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                GET STARTED <ArrowRight className="h-4 w-4" />
+                SIGN UP
               </Button>
             </div>
           </div>

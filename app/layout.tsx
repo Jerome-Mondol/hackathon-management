@@ -2,6 +2,7 @@ import { Space_Grotesk, Bebas_Neue, Oswald, Inter, JetBrains_Mono } from "next/f
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/shared/navbar/Navbar";
+import Footer from "@/components/shared/footer/Footer";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       `}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
